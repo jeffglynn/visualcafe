@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery.Gantt</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=IE8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 13px;
+                padding: 0 0 50px 0;
+            }
+            h1 {
+                margin: 40px 0 20px 0;
+            }
+            h2 {
+                font-size: 1.5em;
+                padding-bottom: 3px;
+                border-bottom: 1px solid #DDD;
+                margin-top: 50px;
+                margin-bottom: 25px;
+            }
+            table th:first-child {
+                width: 150px;
+            }
+            .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+            @keyframes octocat-wave {
+                0%, 100% {
+                    transform: rotate(0)
+                }
+                20%, 60% {
+                    transform: rotate(-25deg)
+                }
+                40%, 80% {
+                    transform: rotate(10deg)
+                }
+            }
+            @media (max-width:500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none
+                }
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out
+                }
+            }
+          
+
+  
+  .nav-page-back{
+      display: none!important;
+  }
+  .nav-page-next{
+      display: none!important;
+  }
+  .nav-now{
+      display: none!important;
+  }
+
+  .nav-zoomIn{
+      display: none!important;
+  }
+  .nav-zoomOut{
+      display: none!important;
+  }          
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+
+            
+
+            <h2 id="example">
+                Example
+            </h2>
+
+            <div class="gantt"></div>
+
+
+
+     
+    <script src="js/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery.fn.gantt.js"></script>
+
+    <script>
+        $(function() {
+           
+
+            var demoSource = [{"name":"<a href='canmore-short-term-rentals\/467'>Ref #467<\/a>","values":[]},{"name":"<a href='canmore-short-term-rentals\/464'>Ref #464<\/a>","values":[{"from":"2020-10-03","to":"2021-07-05"},{"from":"2021-08-08","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/465'>Ref #465<\/a>","values":[{"from":"2020-10-03","to":"2020-11-30"},{"from":"2021-02-01","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/462'>Ref #462<\/a>","values":[{"from":"2020-10-03","to":"2020-12-18"},{"from":"2021-01-20","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/458'>Ref #458<\/a>","values":[{"from":"2020-10-03","to":"2020-12-01"},{"from":"2021-01-03","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/451'>Ref #451<\/a>","values":[{"from":"2020-10-03","to":"2021-08-31"}]},{"name":"<a href='canmore-short-term-rentals\/450'>Ref #450<\/a>","values":[]},{"name":"<a href='canmore-short-term-rentals\/449'>Ref #449<\/a>","values":[{"from":"2020-10-03","to":"2021-09-03"}]},{"name":"<a href='canmore-short-term-rentals\/448'>Ref #448<\/a>","values":[{"from":"2020-10-03","to":"2021-09-02"}]},{"name":"<a href='canmore-short-term-rentals\/443'>Ref #443<\/a>","values":[{"from":"2020-12-07","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/441'>Ref #441<\/a>","values":[{"from":"2020-10-03","to":"2021-03-31"},{"from":"2021-04-23","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/419'>Ref #419<\/a>","values":[{"from":"2021-02-01","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/468'>Ref #468<\/a>","values":[{"from":"2020-10-03","to":"2021-06-30"},{"from":"2021-08-02","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/469-0'>Ref #469<\/a>","values":{"1":{"from":"2021-04-16","to":"2021-10-31"}}},{"name":"<a href='canmore-short-term-rentals\/466-0'>Ref #466<\/a>","values":[{"from":"2020-10-25","to":"2021-10-31"}]},{"name":"<a href='canmore-short-term-rentals\/471'>Ref #471<\/a>","values":[{"from":"2020-10-03","to":"2021-07-31"}]}];
+
+     
+                        $(".gantt").gantt({
+                                        source: 'http://peka-demo.dev.o5815291289.ny1.us.aegir.cc/sites/peka.dev.ab.ca/files/avail.json',
+                                        navigate: "scroll",
+                                        scale: "days",
+                                        
+                                        itemsPerPage: 50,
+                                        scrollToToday: false,
+                                        useCookie: true,
+                                        
+                                        onRender: function() {
+                                            if (window.console && typeof console.log === "function") {
+                                                console.log("chart rendered");
+                                            }
+                                        }
+                                    });
+
+            $(".gantt").popover({
+                selector: ".bar",
+                title: function _getItemText() {
+                    return this.textContent;
+                },
+                container: '.gantt',
+                content: "Click House Ref# on left to go to the listing",
+                trigger: "hover",
+                placement: "auto right"
+            });
+
+        
+
+        });
+    </script>
+
+    </body>
+</html>

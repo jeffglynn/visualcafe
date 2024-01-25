@@ -1,0 +1,81 @@
+.cognito:not(.c-forms-actionBar) {
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.cognito form {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 20px;
+}
+.cognito .c-forms-form {
+  max-width: none;
+  margin-top: 20px;
+}
+.cognito label {
+  display: none;
+}
+.cognito input, .cognito textarea {
+  width: 100% !important;
+  padding-left: 15px !important;
+  font-family: "Marcellus", serif !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 1.42857;
+  color: #555 !important;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+}
+@media (min-width: 991px) {
+  .cognito [data-field=LeftBox] {
+    width: 50% !important;
+  }
+}
+.cognito [data-field=RightBox] {
+  clear: none !important;
+}
+@media (min-width: 991px) {
+  .cognito [data-field=RightBox] {
+    width: 50% !important;
+  }
+}
+.cognito #c-recaptcha-div {
+  position: absolute;
+}
+.cognito .c-button-section {
+  display: flex;
+  justify-content: center;
+}
+.cognito .c-button-section button {
+  border-radius: 4px !important;
+  border: 1px solid #ccc !important;
+}
+@media (max-width: 991px) {
+  .cognito .c-button-section {
+    text-align: center;
+  }
+}
+.cognito textarea {
+  height: 197px !important;
+}
+.cognito ::-webkit-input-placeholder, .cognito ::-moz-placeholder, .cognito :-ms-input-placeholder, .cognito :-moz-placeholder {
+  /* Chrome/Opera/Safari */
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 5px;
+}
+.cognito .c-forms-confirmation-message p {
+  font-family: "Marcellus", serif !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  text-align: center;
+  color: #fff !important;
+}
