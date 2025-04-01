@@ -1,215 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width; initial-scale=1" />
 
-<head>
+		<meta name="Description" content="Visual Cafe is a professional Website Design and Development company based in Canmore, Alberta. We build websites ranging from simple one page sites to complex content-management solutions, for all sizes of companies" />
+		<title>Canmore and Banff Web Design - Professional Website Design and Development for the Bow Valley.</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
 
+		<!-- Custom CSS -->
+		<link href="css/agency.css" rel="stylesheet" />
 
-    <meta name="Description" content="Visual Cafe is a professional Website Design and Development company based in Canmore, Alberta. We build websites ranging from simple one page sites to complex content-management solutions, for all sizes of companies" />
-    <title>Canmore and Banff Web Design - Professional Website Design and Development for the Bow Valley. </title>
+		<!-- Custom Fonts -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+		<script type="text/javascript">
+			//test for touch events support and if not supported, attach .no-touch class to the HTML tag.
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-   <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+			if (!("ontouchstart" in document.documentElement)) {
+				document.documentElement.className += " no-touch";
+			}
+		</script>
+	</head>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript">
-        //test for touch events support and if not supported, attach .no-touch class to the HTML tag.
-         
-        if (!("ontouchstart" in document.documentElement)) {
-        document.documentElement.className += " no-touch";
-        }
-
-    </script>
-
-</head>
-
-<body id="page-top" class="index" >
-    <div class="container">
-   <h3 class="text-center">Your Contact Information</h3>
-		<div class="form-group">
-			<div class="row">
-				<div class="col-md-6 mb-1">
-					<input type="text" id="full_name" class="form-control" name="Full_Name" placeholder="Full name*" required="">
-					<p id="err-full-name" class="text-danger">*Full Name is required</p>
+	<body id="page-top" class="index">
+		<div class="container">
+			<h3 class="text-center">Your Contact Information</h3>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6 mb-1">
+						<input type="text" id="full_name" class="form-control" name="Full_Name" placeholder="Full name*" required="" />
+						<p id="err-full-name" class="text-danger">*Full Name is required</p>
+					</div>
+					<div class="col-md-6 mb-1">
+						<input type="email" id="email" class="form-control" name="Email" placeholder="Email address*" required="" />
+						<p id="err-email" class="text-danger">*Email is required</p>
+					</div>
 				</div>
-				<div class="col-md-6 mb-1">
-					<input type="email" id="email" class="form-control" name="Email" placeholder="Email address*" required="">
-					<p id="err-email" class="text-danger">*Email is required</p>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6 mb-1">
+						<input type="tel" id="tel" class="form-control" name="Phone_No" placeholder="Phone number*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="" />
+						<small class="form-text text-muted">With area-code please</small>
+						<p id="err-phone" class="text-danger">*Phone Number is required</p>
+					</div>
+					<div class="col-md-6 mb-1"><input type="text" class="form-control" name="Postal_Code" placeholder="Postal code" /></div>
+				</div>
+			</div>
+			<button type="button" data-step="1" class="next btn btn-primary">Next</button>
+
+			<div class="icon-div">
+				<i class="icon-car-information"></i>
+			</div>
+			<h3 class="text-center">Car &amp; Services Info</h3>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6 mb-1">
+						<label>Service Requested</label>
+						<select name="Service_Requested" class="form-select" aria-label="Default select example">
+							<option selected="">Chip repair</option>
+							<option>Auto Glass Replacement</option>
+							<option>Other windshield</option>
+							<option>Accessories</option>
+						</select>
+					</div>
+					<div class="col-md-6 mb-1">
+						<label>Damaged Area</label>
+						<select name="Damaged_Area" class="form-select" aria-label="Default select example">
+							<option selected="">Windshield</option>
+							<option>Side Glass</option>
+							<option>Rear Glass</option>
+							<option>Other</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6 mb-1">
+						<input type="text" id="car-make" class="form-control" name="Car_Make" placeholder="your car make*" required="" />
+						<p id="err-car-make" class="text-danger">*Car Make is required</p>
+					</div>
+					<div class="col-md-6 mb-1">
+						<input type="text" id="car-model" class="form-control" name="Car_Model" placeholder="Your car model*" required="" />
+						<p id="err-car-model" class="text-danger">*Car Model is required</p>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6 mb-1"><input type="text" class="form-control" name="Car_Year" placeholder="Your car year" /></div>
+					<div class="col-md-6 mb-1"><input type="text" class="form-control" name="VIN" placeholder="#VIN" /></div>
+				</div>
+			</div>
+			<button type="button" class="previous btn btn-primary">Back</button>
+			<button type="button" data-step="2" class="next btn btn-primary">Next</button>
+			<div class="icon-div">
+				<i class="icon-more-information"></i>
+			</div>
+			<h3 class="text-center">Additional Information</h3>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-12">
+						<label for="">Does your vehicle have a Rain Sensor?</label>
+						<div class="checkboxes d-flex">
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="Rain_Sensor" id="yes1" value="Yes" />
+								<label class="form-check-label" for="yes1">Yes</label>
+							</div>
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="Rain_Sensor" id="no1" value="No" />
+								<label class="form-check-label" for="no1">No</label>
+							</div>
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="Rain_Sensor" id="not-sure1" value="Not Sure" />
+								<label class="form-check-label" for="not-sure1">Not sure</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-12">
+						<label for="">Does your vehicle have heads-up display?</label>
+						<div class="checkboxes d-flex mb-1">
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="Headup_Display" id="yes2" value="Yes" />
+								<label class="form-check-label" for="yes2">Yes</label>
+							</div>
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="Headup_Display" id="no2" value="No" />
+								<label class="form-check-label" for="no2">No</label>
+							</div>
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="Headup_Display" id="not-sure2" value="Not Sure" />
+								<label class="form-check-label" for="not-sure2">Not sure</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-12">
+						<label for="">Does your vehicles have ADAS features?</label>
+						<div class="checkboxes d-flex mb-1">
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="adas_features" id="yes3" value="Yes" />
+								<label class="form-check-label" for="yes3">Yes</label>
+							</div>
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="adas_features" id="no3" value="No" />
+								<label class="form-check-label" for="no3">No</label>
+							</div>
+							<div class="form-check mb-1">
+								<input class="form-check-input" type="radio" name="adas_features" id="not-sure3" value="Not Sure" />
+								<label class="form-check-label" for="not-sure3">Not sure</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-12 mb-1">
+						<textarea name="comment" id="" rows="6" placeholder="More details about your car..."></textarea>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="form-group">
-			<div class="row">
-				<div class="col-md-6 mb-1">
-					<input type="tel" id="tel" class="form-control" name="Phone_No" placeholder="Phone number*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
-					<small class="form-text text-muted">With area-code please</small>
-					<p id="err-phone" class="text-danger">*Phone Number is required</p>
-				</div>
-				<div class="col-md-6 mb-1"><input type="text" class="form-control" name="Postal_Code" placeholder="Postal code"></div>
-			</div>
-		</div>
-		<button type="button" data-step="1" class="next btn btn-primary">Next</button>
-	
-<div class="icon-div">
-	<i class="icon-car-information"></i>
-</div>
-<h3 class="text-center">Car &amp; Services Info</h3>
-<div class="form-group">
-	<div class="row">
-		<div class="col-md-6 mb-1">
-            <label>Service Requested</label>
-			<select name="Service_Requested" class="form-select" aria-label="Default select example">
-				<option selected="">Chip repair</option>
-				<option>Auto Glass Replacement</option>
-				<option>Other windshield</option>
-				<option>Accessories</option>
-
-			</select>
-		</div>
-		<div class="col-md-6 mb-1">
-            <label>Damaged Area</label>
-			<select name="Damaged_Area" class="form-select" aria-label="Default select example">
-				<option selected="">Windshield</option>
-				<option>Side Glass</option>
-				<option>Rear Glass</option>
-				<option>Other</option>
-
-			</select>
-		</div>
-	</div>
-</div>
-<div class="form-group">
-	<div class="row">
-		<div class="col-md-6 mb-1">
-			<input type="text" id="car-make" class="form-control" name="Car_Make" placeholder="your car make*" required="">
-			<p id="err-car-make" class="text-danger">*Car Make is required</p>
-		</div>
-		<div class="col-md-6 mb-1">
-			<input type="text" id="car-model" class="form-control" name="Car_Model" placeholder="Your car model*" required="">
-			<p id="err-car-model" class="text-danger">*Car Model is required</p>
-		</div>
-	</div>
-</div>
-<div class="form-group">
-	<div class="row">
-		<div class="col-md-6 mb-1"><input type="text" class="form-control" name="Car_Year" placeholder="Your car year"></div>
-		<div class="col-md-6 mb-1"><input type="text" class="form-control" name="VIN" placeholder="#VIN"></div>
-	</div>
-</div>
-<button type="button" class="previous btn btn-primary">Back</button>
-<button type="button" data-step="2" class="next btn btn-primary">Next</button></fieldset><fieldset>
-<div class="icon-div">
-	<i class="icon-more-information"></i>
-</div>
-<h3 class="text-center">Additional Information</h3>
-<div class="form-group">
-	<div class="row">
-		<div class="col-md-12">
-			<label for="">Does your vehicle have a Rain Sensor?</label>
-			<div class="checkboxes d-flex">
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="Rain_Sensor" id="yes1" value="Yes">
-					<label class="form-check-label" for="yes1">
-						Yes
-					</label>
-				</div>
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="Rain_Sensor" id="no1" value="No">
-					<label class="form-check-label" for="no1">
-						No
-					</label>
-				</div>
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="Rain_Sensor" id="not-sure1" value="Not Sure">
-					<label class="form-check-label" for="not-sure1">
-						Not sure
-					</label>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="form-group">
-	<div class="row">
-		<div class="col-md-12">
-			<label for="">Does your vehicle have heads-up display?</label>
-			<div class="checkboxes d-flex mb-1">
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="Headup_Display" id="yes2" value="Yes">
-					<label class="form-check-label" for="yes2">
-						Yes
-					</label>
-				</div>
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="Headup_Display" id="no2" value="No">
-					<label class="form-check-label" for="no2">
-						No
-					</label>
-				</div>
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="Headup_Display" id="not-sure2" value="Not Sure">
-					<label class="form-check-label" for="not-sure2">
-						Not sure
-					</label>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="form-group">
-	<div class="row">
-		<div class="col-md-12">
-			<label for="">Does your vehicles have ADAS features?</label>
-			<div class="checkboxes d-flex mb-1">
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="adas_features" id="yes3" value="Yes">
-					<label class="form-check-label" for="yes3">
-						Yes
-					</label>
-				</div>
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="adas_features" id="no3" value="No">
-					<label class="form-check-label" for="no3">
-						No
-					</label>
-				</div>
-				<div class="form-check mb-1">
-					<input class="form-check-input" type="radio" name="adas_features" id="not-sure3" value="Not Sure">
-					<label class="form-check-label" for="not-sure3">
-						Not sure
-					</label>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="form-group">
-	<div class="row">
-		<div class="col-12 mb-1">
-			<textarea name="comment" id="" rows="6" placeholder="More details about your car..."></textarea>
-		</div>
-	</div>
-</div>
-</div>
-
-</body>
+	</body>
 </html>
